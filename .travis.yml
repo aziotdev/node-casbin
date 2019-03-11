@@ -5,7 +5,10 @@ sudo: false
 node_js:
   - 'stable'
   - '8'
-  - '6'
+
+install: yarn install
+cache:
+  yarn: true
 
 script: echo "Running tests against $(node -v)..."
 
